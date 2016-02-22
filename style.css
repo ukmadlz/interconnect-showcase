@@ -1,0 +1,35 @@
+/* Columns */
+.column {
+  height: 95vh;
+  float: left;
+  padding: 1rem;
+  width: 25%;
+  cursor: pointer;
+}
+.column h2 {
+  background: #fff;
+  padding: 1em
+}
+.column .description {
+  display: none;
+  background: #fff;
+}
+.column .description a {
+  font-weight: bolder;
+  color: #db2780;
+}
+/* Full Screen */
+.full-width {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh
+}
+.full-width .description {
+  display: block;
+  position: fixed;
+  bottom: 1rem;
+  padding: 1rem;
+  width: 98%;
+}
