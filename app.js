@@ -53,15 +53,17 @@ $(document).ready(function () {
         </a>
       </div>
     </div>`;
+
     if ($('#' + doc._id).length) {
       $('#' + doc._id).replaceWith(template);
     } else {
       $('#showcase-list').append(template);
     }
+
     $('.column').on('click', function (e) {
       e.preventDefault();
-      if($(this).hasClass('full-width')) {
-        $(this).removeClass('full-width')
+      if ($(this).hasClass('full-width')) {
+        $(this).removeClass('full-width');
       } else {
         var recordId = $(this).attr('id');
         db.get(recordId, {
